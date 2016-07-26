@@ -19,7 +19,9 @@ var NavBar = React.createClass({
     render() {
         return (
             <div>
-              <AppBar title="First Kick Open House 2016"
+              <AppBar title={<div><img src='images/logo.png' height='30px'/></div>}
+                iconElementLeft={<div></div>}
+                iconElementRight= {<h5 style={{paddingTop: '8px', paddingRight: '10px', color:'#ffffff'}}>OPEN HOUSE 2016</h5>}
                 style={{backgroundColor:'#f3911e'}}/>
               </div>
         );

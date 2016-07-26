@@ -1,22 +1,21 @@
 import React from 'react';
 import { Button, Jumbotron, Row, Col, Grid, Image } from 'react-bootstrap';
 
+
 var Showcase = React.createClass({
-        getInitialState: function() {
-        return {
-          col: window.innerWidth > 400 ? 4 : 2};
-      },
-      componentDidMount: function() {
-        window.addEventListener("resize", this.updateDimensions);
-    },
-    updateDimensions: function() {
-        this.setState({col: window.innerWidth > 400 ? 4 : 2});
-    },
 
     render() {
         return (
-                 <Image src="images/openhouse.jpg" responsive />
-
+          <section class="grouping">
+            <div style={{maxWidth:'100%', maxHeight:'500px', margin:'0 auto', overflow:'hidden', position:'relative', backgroundImage: 'url(images/bg_pattern.png)'}}>
+              <figure>
+                  <img src="images/openhouse.jpg" />
+                </figure>
+                <figure style={{position:'absolute', maxWidth:'40%', top:'35%', left:'30%'}}>
+                  <img src="images/logo.png" />
+                </figure>
+              </div>
+          </section>
         );
     }
 });

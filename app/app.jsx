@@ -7,14 +7,11 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const muiTheme = getMuiTheme({
   palette: {
-    primary1Color: '#000000',
+    primary1Color: '#f3911e',
 
   },
   appBar: {
     height: 50,
-  },
-  stepper: {
-    iconColor: '#f3911e',
   },
   fontFamily: 'Roboto, sans-serif'
 });

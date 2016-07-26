@@ -4,18 +4,19 @@
   "description": "First Kick Open House",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "copy-css": "ncp node_modules/onsenui/css css"
+    "start": "node server.js"
   },
   "author": "Ray Yee",
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
+    "firebase": "^3.2.0",
     "material-ui": "^0.15.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-router": "^2.4.1",
-    "react-tap-event-plugin": "^1.0.0"
+    "react-tap-event-plugin": "^1.0.0",
+    "validator": "^5.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",
