@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from 'NavBar';
 import Showcase from 'Showcase';
 import VerticalLinearStepper from 'VerticalLinearStepper';
+import Content from 'Content';
 
 var Main = React.createClass({
 
@@ -9,6 +9,7 @@ var Main = React.createClass({
         return (
           <div>
               <Showcase />
+              <Content />
               <VerticalLinearStepper />
           </div>
 

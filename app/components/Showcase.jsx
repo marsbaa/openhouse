@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button, Jumbotron, Row, Col, Grid, Image } from 'react-bootstrap';
 
 
 var Showcase = React.createClass({
@@ -11,7 +10,7 @@ var Showcase = React.createClass({
               <figure>
                   <img src="images/openhouse.jpg" />
                 </figure>
-                <figure style={{position:'absolute', maxWidth:'40%', top:'35%', left:'30%'}}>
+                <figure style={{position:'absolute', maxWidth:'40%', top:'35%', left:'30%', display: 'block'}}>
                   <img src="images/logo.png" />
                 </figure>
               </div>

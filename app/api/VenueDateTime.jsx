@@ -29,17 +29,6 @@ var venue = [
   {
     id: 'Kovan',
     dateTime: [
-      '30th Jul, 9:00 - 10:00am',
-      '30th Jul, 4:00 - 5:00pm',
-      '6th Aug, 9:00 - 10:00am',
-      '6th Aug, 4:00 - 5:00pm'
-    ]
-  },
-  {
-    id: 'Punggol',
-    dateTime: [
-      '30th Jul, 9:00 - 10:00am',
-      '30th Jul, 4:00 - 5:00pm',
       '6th Aug, 9:00 - 10:00am',
       '6th Aug, 4:00 - 5:00pm'
     ]

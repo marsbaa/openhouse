@@ -102,11 +102,85 @@ Modular Styles
 /***************
 Global Styles
 ***************/
-.wrapper {
-  width:960px;
-  margin: 0 auto;
+section {
+	padding-bottom: 40px;
 }
 
+p{
+	padding-top: 20px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1em;
+  margin-bottom: 20px;
+  line-height: 1;
+  padding: 5px;
+  background-color: #f59600;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+	box-shadow: 0px 0px 0px 3px #f59600;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1em;
+	margin-bottom: 20px;
+  line-height: 1;
+  padding: 10px;
+	color: #f59600;
+	font-weight: bold;
+}
+
+h4 {
+	text-align: center;
+	font-size: 0.6em;
+	margin-bottom: 20px;
+  line-height: 1;
+	color: #000;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.circle{
+	text-align: center;
+	background-color: #f59600;
+	padding: 10px;
+	border-radius: 50%;
+	width: 50px;
+	margin: 0 auto;
+}
+
+.intro-content {
+  width: 62.5%; /* 600/960 */
+  margin-right: 6.25%; /* 60/960 */
+  float: left;
+}
+
+.wrapper {
+  max-width:960px;
+  width: 90%;
+  margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.column {
+  float: left;
+  width: 300px; /* 300/960 */
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 /***************
 Custom Styles
 ***************/
+
+@media screen and (max-width: 767px){
+	.wrapper {
+	  max-width: 300px;
+	  width: 90%;
+	  margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+}

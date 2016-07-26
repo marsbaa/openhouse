@@ -27,9 +27,8 @@ const styles = {
   },
   radioButton: {
     marginBottom: 10,
-    paddingLeft: '5px',
     lineHeight: 9,
-    fontSize: '10px'
+    fontSize: 12
   },
   paperStyle: {
   width: 270,
@@ -103,7 +102,6 @@ class VerticalLinearStepper extends React.Component {
 
     _.times(value, i => {
       var childName = document.getElementById(("Name"+(i+1))).value;
-      console.log(childName);
       var dateOfBirth = document.getElementById(("DOB"+(i+1))).value;
       console.log(dateOfBirth);
       var radios = document.getElementsByName(("Gender"+(i+1)));
@@ -364,7 +362,10 @@ class VerticalLinearStepper extends React.Component {
 
     return (
       <section>
-        <div style={{maxWidth: '300px', margin: '0 auto'}}>
+        <div className="wrapper">
+          <div style={{maxWidth:'60%', margin:'0 auto'}}>
+            <h1>REGISTER NOW</h1>
+          </div>
           <Stepper activeStep={stepIndex} orientation="vertical">
             <Step>
               <StepLabel style={{fontSize: '16px' }}>Select Venue</StepLabel>
@@ -391,12 +392,6 @@ class VerticalLinearStepper extends React.Component {
                   <RadioButton
                     value="Kovan"
                     label={<div><div style={{fontSize:'12px', fontWeight:'500'}}>Kovan</div><div style={{fontSize:'9px'}}>Kovan Sports Centre<br/>60 Hougang Street 21 Singapore 548738</div></div>}
-                    style={styles.radioButton}
-                    labelStyle={{lineHeight: '14px'}}
-                  />
-                  <RadioButton
-                    value="Punggol"
-                    label={<div><div style={{fontSize:'12px', fontWeight:'500'}}>Punggol</div><div style={{fontSize:'9px'}}>Punggol Sports Hub<br/>6 Tebing Lane Singapore 828835</div></div>}
                     style={styles.radioButton}
                     labelStyle={{lineHeight: '14px'}}
                   />
