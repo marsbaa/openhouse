@@ -108,11 +108,29 @@ section {
 
 p{
 	padding-top: 20px;
+	text-align: center;
+	margin: 0px 15px;
+}
+
+a{
+	color: #f59600;
+}
+
+.showcase {
+	max-width: 100%;
+}
+
+.logo-center {
+	position: absolute;
+	width: 60%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-25% , -50%);
 }
 
 h1 {
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.5em;
   margin-bottom: 20px;
   line-height: 1;
   padding: 5px;
@@ -124,7 +142,7 @@ h1 {
 
 h2 {
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.5em;
 	margin-bottom: 20px;
   line-height: 1;
   padding: 10px;
@@ -134,7 +152,7 @@ h2 {
 
 h4 {
 	text-align: center;
-	font-size: 0.6em;
+	font-size: 1em;
 	margin-bottom: 20px;
   line-height: 1;
 	color: #000;
@@ -151,36 +169,116 @@ h4 {
 	margin: 0 auto;
 }
 
-.intro-content {
-  width: 62.5%; /* 600/960 */
-  margin-right: 6.25%; /* 60/960 */
-  float: left;
-}
 
 .wrapper {
   max-width:960px;
   width: 90%;
   margin: 0 auto;
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding-top: 15px;
+	padding-bottom: 20px;
 }
 
 .column {
-  float: left;
-  width: 300px; /* 300/960 */
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.text-bold {
+	font-size: 16px !important;
+	font-weight: bold !important;
+}
+
+.radio-button {
+	margin-bottom: 10px;
+	line-height: 14px;
+	font-size: 14px;
 }
 /***************
 Custom Styles
 ***************/
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 320px){
 	.wrapper {
 	  max-width: 300px;
 	  width: 90%;
 	  margin: 0 auto;
-		padding-top: 20px;
-		padding-bottom: 30px;
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+
+	.logo-center {
+		position: absolute;
+		width: 60%;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50% , -50%);
+	}
+
+	.step-label {
+		font-size: 16px;
+	}
+
+	h4 {
+		font-size: 0.8em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	h1 {
+		font-size: 1em;
+	}
+
+	.text-bold {
+		font-size: 13px !important;
+		font-weight: bold !important;
+	}
+
+	.text-small {
+		font-size: 8px !important;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.wrapper {
+	  max-width: 360px;
+	  width: 90%;
+	  margin: 0 auto;
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+
+	.step-label {
+		font-size: 20px !important;
+	}
+
+	.text-bold {
+		font-size: 16px !important;
+		font-weight: bold !important;
+	}
+
+	.text-small {
+		font-size: 10px !important;
+	}
+
+	.logo-center {
+		position: absolute;
+		width: 60%;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50% , -50%);
+	}
+
+	h4 {
+		font-size: 0.9em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	h1 {
+		font-size: 1.2em;
 	}
 }

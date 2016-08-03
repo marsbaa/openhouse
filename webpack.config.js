@@ -1,5 +1,14 @@
 var webpack = require('webpack');
 var path = require('path');
+var envFile = require('node-env-file');
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+try {
+  envFile(path.join(__dirname, 'config/' + process.env.NODE_ENV + '.env'));
+} catch (e) {
+
+}
 
 module.exports = {
   entry: [
@@ -18,6 +27,22 @@ module.exports = {
     ],
     extensions: ['', '.js', '.jsx']
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery'
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false
+      }
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      }
+    })
+  ],
   module: {
     loaders: [
       {
@@ -29,5 +54,6 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       }
     ]
-  }
+  },
+  devtool: process.env.NODE_ENV === 'production' ? undefined : 'cheap-module-eval-source-map'
 };

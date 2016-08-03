@@ -9,8 +9,9 @@ var Main = React.createClass({
         return (
           <div>
               <Showcase />
-              <Content />
               <VerticalLinearStepper />
+              <Content />
+
           </div>
 
         );
